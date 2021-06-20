@@ -5,7 +5,7 @@
 
 resolution get_map_resolution(std::string path);
 
-int main()
+gameMap	extract_map(char *path)
 {
 	resolution map_size = get_map_resolution("map.map");
 
@@ -22,6 +22,7 @@ int main()
 		my_map.close();
 	}
 	Field.showMap();
+	return (Field);
 }
 
 resolution get_map_resolution(std::string path)
