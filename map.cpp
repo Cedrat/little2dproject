@@ -57,9 +57,9 @@ void gameMap::showMap() const
 	}
 }
 
-char gameMap::getValueCase(int i) const
+char gameMap::getValueCase(int x, int y) const
 {
-	return (map[i]);
+	return (map[x + y * size_y]);
 }
 
 // void gameMap::stantardizeMap() //Need to finish..

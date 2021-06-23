@@ -18,7 +18,7 @@ class gameMap
 		void 			setSizeX(unsigned int value);
 		// void 			stantardizeMap();
 		void 			showMap() const;
-		char getValueCase(int i)const;
+		char getValueCase(int x, int y)const;
 
 
 	private:
